@@ -28,7 +28,7 @@ class MicImporter(csvFileUrl: URL) {
                     MicRecord(
                         it[MicRecord.RowStructure.MIC],
                         it[MicRecord.RowStructure.OP_MIC],
-                        if ( it[MicRecord.RowStructure.ACRONYM].length > 0 ) it[MicRecord.RowStructure.ACRONYM] else null,
+                        if (it[MicRecord.RowStructure.ACRONYM].isNotEmpty()) it[MicRecord.RowStructure.ACRONYM] else null,
                         Country(
                             it[MicRecord.RowStructure.COUNTRY],
                             it[MicRecord.RowStructure.ISO]

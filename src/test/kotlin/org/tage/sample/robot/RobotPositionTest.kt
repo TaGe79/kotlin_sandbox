@@ -18,9 +18,9 @@ class RobotPositionTest {
 
     companion object {
         @JvmStatic fun samples() : Stream<Arguments> = Stream.of(
-        Arguments.of(Pos(2, -3),"UDDLLRUUUDUURUDDUULLDRRRR" ),
-        Arguments.of(Pos(-2, -1), "DLLRRULUURLLDDU"),
-        Arguments.of(Pos(3, -10),"UURRDDLLLLLUUaUUUUxRbRRRRRUUUU"),
-        Arguments.of(Pos(-1,-1),"LU"))
+        Arguments.of(Pos(2, 3),"UDDLLRUUUDUURUDDUULLDRRRR" ),
+        Arguments.of(Pos(-2, 1), "DLLRRULUURLLDDU"),
+        Arguments.of(Pos(3, 10),"UURRDDLLLLLUUaUUUUxRbRRRRRUUUU"),
+        Arguments.of(Pos(-1,1),"LU"))
     }
 }

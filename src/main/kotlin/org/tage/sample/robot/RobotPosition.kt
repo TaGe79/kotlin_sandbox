@@ -15,11 +15,11 @@ sealed class Move(val m: Char, val position: Pos = Pos(0, 0)) {
     }
 }
 
-class Up(val last: Move) : Move('U', last.position.copy(y = last.position.y + 1))
-class Down(val last: Move) : Move('D', last.position.copy(y = last.position.y - 1))
-class Left(val last: Move) : Move('L', last.position.copy(x = last.position.x - 1))
-class Right(val last: Move) : Move('R', last.position.copy(x = last.position.x + 1))
-class Unknown(val mm: Char, val last: Move) : Move(mm, last.position) {
+class Up(last: Move) : Move('U', last.position.copy(y = last.position.y + 1))
+class Down(last: Move) : Move('D', last.position.copy(y = last.position.y - 1))
+class Left(last: Move) : Move('L', last.position.copy(x = last.position.x - 1))
+class Right(last: Move) : Move('R', last.position.copy(x = last.position.x + 1))
+class Unknown(mm: Char, last: Move) : Move(mm, last.position) {
     init {
         println("unknown move '$m'")
     }
